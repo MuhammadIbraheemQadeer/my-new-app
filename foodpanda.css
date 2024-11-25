@@ -1,0 +1,29 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 0vh;
+}
+.container{
+    margin: 20px;
+    width: 75%;
+
+}
+img{
+    max-width: 200px;
+    float: left;
+    border-radius: 10px;
+    border: 3px solid pink;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+h1{
+   margin-top: 35px; 
+}
