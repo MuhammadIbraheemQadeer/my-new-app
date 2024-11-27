@@ -1,0 +1,52 @@
+.footer {
+  background-color: black; /* Matching the navbar color */
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links, .footer-socials {
+  margin-bottom: 20px;
+}
+
+.footer-links ul, .footer-socials ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-link, .social-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover{
+  color: #f9004d;
+}
+
+.social-link:hover{
+  color: red;
+} 
+
+.footer-copy {
+  font-size: 0.9rem;
+}
+
+.footer-socials ul {
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link {
+  font-size: 1.4rem;
+}
+
+

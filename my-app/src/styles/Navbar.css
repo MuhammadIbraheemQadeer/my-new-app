@@ -1,0 +1,97 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000; /* Darker blue background */
+  color: white;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo and website name */
+}
+
+.logo-img {
+  height: 70px; /* Adjust logo size */
+  width: auto;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #61dafb; /* Light blue color for the text */
+}
+
+.logo-text .web{
+  color: #f9004d;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 22px;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #f9004d; /* Hover color changes to tomato red */
+}
+
+/* Navbar Search Bar */
+.search-form {
+  display: flex;
+  align-items: center;  /* Center the input and button vertically */
+  margin-left: 20px;    /* Space between navbar menu and search bar */
+}
+
+.search-input {
+  padding: 8px 12px;  /* Space inside the input */
+  font-size: 1rem;     /* Text size inside the input */
+  border: 1px solid #ccc;  /* Border color */
+  border-radius: 20px; /* Rounded corners */
+  width: 200px;        /* Width of the input */
+  margin-right: 10px;  /* Space between input and button */
+  background-color: #fff; /* White background */
+  color: #333;         /* Dark text color */
+  transition: border-color 0.3s ease;  /* Smooth border color transition */
+}
+
+.search-input:focus {
+  border-color: #007bff;  /* Change border color on focus */
+  outline: none;           /* Remove default outline */
+}
+
+.search-button {
+  padding: 8px 16px;  /* Space inside the button */
+  font-size: 1rem;     /* Text size inside the button */
+  background-color: #f9004d; /* Blue background */
+  color: white;        /* White text color */
+  border: none;        /* No border */
+  border-radius: 20px;  /* Rounded corners */
+  cursor: pointer;     /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.search-button:hover {
+  background-color: transparent;
+  border: 3px solid white;  /* Darker blue when hovered */
+}
+
+/* Optionally, add responsiveness for smaller screens */
+
+
+  .search-input {
+    width: 150px;  /* Adjust width for smaller screens */
+  }
+
