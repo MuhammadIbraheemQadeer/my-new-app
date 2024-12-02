@@ -1,0 +1,71 @@
+.cards-container {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: flex-start; 
+    padding: 20px;
+    flex-direction: row;
+}
+
+.card{
+    display: flex;
+    justify-self: center;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    background-color: rgb(4, 255, 234);
+    color: black;
+    overflow: hidden;
+}
+
+
+
+.head .pr{
+    justify-self: center;
+    margin: 20px;
+    font-weight: 1000;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+ .head2, .head3, .head4{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.head h5, .head2 h5, .head3 h5, .head4 h5 {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    
+}
+
+.head p, .head2 p, .head3 p, .head4 p {
+    margin: 0;
+}
+
+
+.pr{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-image {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 120px; 
+    display: block; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 1.3rem;
+}
+li{
+    font-size: 1.2rem;
+}
