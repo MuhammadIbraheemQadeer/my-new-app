@@ -1,19 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import './Components/App1.css';
-import Greeting from './Components/Greeting';
-import Header from './Components/Header';
-import Content from './Components/content';
-import Footer from './Components/Footer';
+
+
+import './Components/profileCard.css';
+
+import ProfileCard from './Components/profileCard';
+
 
 
 function App() {
   return (
     <div className="App">
-      <Greeting/>
-      <Header/>
-      <Content/>
-      <Footer/>
+      <ProfileCard name="Muhammad Ibraheem Qadeer Ahmed" age="20 years" occupation="Student of BSCS" location="Karachi, Sindh, Pakistan."/>
+
     </div>
   );
 }
