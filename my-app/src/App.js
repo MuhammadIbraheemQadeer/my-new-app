@@ -1,49 +1,49 @@
-import UserData from './Components/UserData'
-import Statistics from './Components/Statistics'
-import Messages from './Components/Messages'
-import './Components/dashboard.css';
+import Specialitymenu from './Components/Specialitymenu';
+import Landingpage from './Components/Landingpage';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import './App.css';
+
 
 
 function App() {
 
-  const user1={
-    name:"Muhammad Ibraheem",
-    email:"24g-bcs552@student.agu.edu.pk",
-    role:"Computer Scientist",
-    profilePic: "https://lh3.googleusercontent.com/a/ACg8ocKJ_GiGdOJCpexrg4FxF0fhSYfVVrj_zoobywvZqrjyWelafFiL=s288-c-no",
-    pro: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWyTI301LWNJvvp-RtzdCUZ6PAUOP8OzkCQ&s"
-  }
-
-  const stat={
-     totalusers: 1234,
-     activeusers: 1010,
-     newSignUps:1000,
-     activepercentage:(1010/1234) * 100
-  }
-
-  const mess={
-    m1:"Hello, Welcome to your Dashboard! Explore the latest insights.",
-    m2:"New updates are available. Check out the new features.",
-    m3:"Remember to complete your profile setup to unlock all features."
-  }
+  const item1 = {
+    name: "Spicy Chicken Wings",
+    description: "Our signature spicy wings",
+    price: "Rs. 500",
+    image:
+    "https://images.deliveryhero.io/image/fd-pk/Products/49411247.jpg?width=%s"
+    };
+    const item2 = {
+    name: "Classic Fried Chicken",
+    description: "Traditional recipe",
+    price: "Rs. 350",
+    image:
+    "https://images.deliveryhero.io/image/fd-pk/Products/26754778.jpg?width=%s"
+    };
+    const item3 = {
+      name: "Chicken Burger Combo",
+      description: "Burger with fries and drink",
+      price: "Rs. 650",
+      image:
+      "https://images.deliveryhero.io/image/fd-pk/Products/58219340.jpg?width=%s"
+      };
 
   return (
-    <div className="app-container">
-      <div className="user-data">
-        <UserData userData={user1} />
+<div className='App'>
+      <Navbar/>
+     <Landingpage/>
+     <div className="content">
+        <Specialitymenu item1={item1} item2={item2} item3={item3} />
       </div>
+     <Footer />
 
 
-      <div className="other-components">
-        <div className="component-box">
-          <Statistics stats={stat} />
-        </div>
-        <div className="component-box">
-          <Messages message={mess} />
-        </div>
+      
       </div>
-    </div>
-  );
+    
+  )
 }
 
 export default App;

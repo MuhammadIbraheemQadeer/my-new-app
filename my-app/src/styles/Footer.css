@@ -1,0 +1,29 @@
+/* App.css */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes full height of the viewport */
+  }
+  
+  .content {
+    flex: 1; /* This makes the content take up the remaining space */
+    padding-bottom: 50px; /* Space before the footer */
+  }
+  
+  footer {
+    background-color: #d32f2f; /* Red background */
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  

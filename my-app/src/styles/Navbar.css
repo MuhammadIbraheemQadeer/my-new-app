@@ -1,0 +1,62 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #d32f2f; /* Red background for the navbar */
+    color: white;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-left img {
+    width: 50px; /* Set a specific size for the logo image */
+    height: auto;
+    margin-right: 10px; /* Space between logo and title */
+  }
+  
+  .navbar-left h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .navbar-right {
+    display: flex;
+    margin-left: auto; /* This will align the menu to the right */
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 20px; /* Space between menu items */
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 700px;
+  }
+  .navbar-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-item a:hover {
+    color: #ff6347; /* Tomato color for hover effect */
+  }
+  
+  .navbar-item i {
+    margin-right: 5px; /* Space between cart icon and text */
+    font-size: 20px; /* Cart icon size */
+  }
+  
+  .order {
+    display: flex;
+    align-items: center;
+  }
+  
