@@ -1,10 +1,11 @@
 import React from 'react';
+import '../styles/Footer.css';
 
 function Footer() {
   return (
-  <div>
-  <footer className="foot"> &copy; 2024 my-app. All Rights are Reserved. </footer>
-  </div>
+    <footer className="footer">
+      <p>&copy; 2024 KababJees Fried Chicken.</p>
+    </footer>
   );
 }
 

@@ -1,0 +1,67 @@
+/* Landingpage.css */
+.landing-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  .intro-text {
+    max-width: 50%;
+    text-align: left;
+    margin-left: 80px;
+  }
+  
+  .intro-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    font-weight: light;
+  }
+  
+  .intro-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .intro-text .order-now-btn {
+    padding: 10px 30px;
+    background-color: #ebbb1f; /* Yellowish background for the button */
+    color: #d32f2f;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the icon and text */
+    transition: background-color 0.3s;
+  }
+  
+  .intro-text .order-now-btn i {
+    font-size: 20px; /* Cart icon size */
+  }
+  
+  .intro-text .order-now-btn:hover {
+    background-color: #ff4500; /* Darker color on hover */
+  }
+  .intro-image {
+    width: 45%;
+    margin-right: 80px; 
+    overflow: hidden; /* Ensure the image stays within the rounded corners */
+    border-radius: 300px;
+    object-fit: cover; /* Ensures the image is cropped to maintain aspect ratio */
+  }
+  
+  .intro-image img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .heading {
+    color: #ebbb1f; /* Yellow for the "KababJees" part */
+  }
+  
