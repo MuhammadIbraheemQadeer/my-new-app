@@ -14,7 +14,7 @@ function Specialitymenu({ item1, item2, item3 }) {
             <h3>{item1.name}</h3>
             <p>{item1.description}</p>
             <div className="menu-item-info">
-              <p>{item1.price}</p>
+              <h3>{item1.price}</h3>
               <button className="add-to-cart-btn">Add to Cart</button>
             </div>
           </div>
@@ -27,7 +27,7 @@ function Specialitymenu({ item1, item2, item3 }) {
             <h3>{item2.name}</h3>
             <p>{item2.description}</p>
             <div className="menu-item-info">
-              <p>{item2.price}</p>
+              <h3>{item2.price}</h3>
               <button className="add-to-cart-btn">Add to Cart</button>
             </div>
           </div>
@@ -40,7 +40,7 @@ function Specialitymenu({ item1, item2, item3 }) {
             <h3>{item3.name}</h3>
             <p>{item3.description}</p>
             <div className="menu-item-info">
-              <p>{item3.price}</p>
+              <h3>{item3.price}</h3>
               <button className="add-to-cart-btn">Add to Cart</button>
             </div>
           </div>
