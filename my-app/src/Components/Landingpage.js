@@ -5,7 +5,7 @@ function Landingpage() {
   return (
     <div className="landing-page">
       <div className="intro-text">
-        <h1>Taste the <span>KababJees</span> Magic</h1>
+        <h1>Taste the <span className='heading'>KababJees</span><br></br> Magic</h1>
         <p>
           Crispy, Delicious Chicken that Keeps You Coming Back!
         </p>

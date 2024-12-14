@@ -19,7 +19,7 @@ function Navbar() {
             <li className="navbar-item order">
               <a href="#order">
                 <i className="fa fa-shopping-cart"></i> {/* Cart Icon */}
-                Order
+                <span>Order</span>
               </a>
             </li>
           </ul>
