@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import './Counter.css';
 
 function Counter() {
@@ -28,4 +28,4 @@ function Counter() {
     );
 }
 
-export default Counter;
+export default Counter;*/

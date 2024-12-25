@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import './Calculator.css'; 
 
 function Calculator() {
@@ -63,4 +63,4 @@ function Calculator() {
     );
 }
 
-export default Calculator;
+export default Calculator;*/

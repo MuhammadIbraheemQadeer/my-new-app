@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import './ShoppingCart.css';
 
 function ShoppingCart() {
@@ -63,4 +63,4 @@ function ShoppingCart() {
     );
 }
 
-export default ShoppingCart;
+export default ShoppingCart;*/
