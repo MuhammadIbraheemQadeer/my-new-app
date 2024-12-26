@@ -1,19 +1,21 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
+import logo from '../assets/ecommercelogo.jpg';
 
-function Navbar() {
-    return (
-        <nav className="navbar">
-            <div className="navbar-logo">Lab 10 - Routing with React Router</div>
-                <ul className="navbar-menu">
-                    <li><a href="/" className="navbar-link">Home</a></li>
-                    <li><a href="/about" className="navbar-link">About</a></li>
-                    <li><a href="/contact" className="navbar-link">Contact</a></li>
-                    <li><a href="/user/24G-BCS552@student.agu.edu.pk" className="navbar-link">User Profile</a></li>
-                    <li><a href="/username/24G-BCS552@student.agu.edu.pk" className="navbar-link">User Details</a></li>
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className='logo-img'>
+      <img src={logo} alt='logo'/>
+      <h1 className='logo'>E-commerce Website</h1>
+      </div>
+      <div className='nav-item'>
+      <Link to="/">Home</Link>
+      <Link to="/cart">Cart</Link>
+      <Link to="/user/ibraheem">Profile</Link>
+      </div>
+    </nav>
+  );
+};
 
-                </ul>
-        </nav>
-    );
-}
 export default Navbar;

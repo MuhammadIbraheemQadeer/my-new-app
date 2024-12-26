@@ -1,29 +1,32 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Components/home';
-import About from './Components/about';
-import Contact from './Components/contact';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import User from './Components/User';
-import ProductDetails from './Components/ProductDetails';
-import Username from './Components/Username';
+import Home from './Components/home';
+import ProductDetail from './Components/ProductDetail';
+import UserProfile from './Components/UserProfile';
+import Cart from './Components/Cart';
+import './App.css';
 
+const products = [
+  { id: '1', name: 'Laptop', price: 1000, image: 'laptop.jpg', description: 'High performance laptop' },
+  { id: '2', name: 'Smartphone', price: 800, image: 'smartphone.jpg', description: 'Latest smartphone' },
+  { id: '3', name: 'Headphones', price: 200, image: 'headphones.jpg', description: 'Noise cancelling headphones' },
+  { id: '4', name: 'Watch', price: 150, image: 'watch.jpg', description: 'Smart fitness watch' }
+];
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar/>
-      
-      <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/user/:userId" element={<User />} />
-      <Route path="/Product-details" element={<ProductDetails/>}/>
-      <Route path="/username/:name" element={<Username />} />
-      </Routes>
-      
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<Home products={products} />} />
+          <Route path="/product/:id" element={<ProductDetail products={products} />} />
+          <Route path="/user/:username" element={<UserProfile />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </div>
     </Router>
   );
-}
+};
+
 export default App;

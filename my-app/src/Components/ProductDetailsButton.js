@@ -1,12 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-function ProductDetailsButton() {
-const navigate = useNavigate();
-const handleClick = () => {
-navigate('/product-details');
-};
-return (
-<button onClick={handleClick}>View Product Details</button>
-);
+
+function ProductDetailsButton({ productId }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/product/${productId}`);
+  };
+
+  return (
+    <button onClick={handleClick}>View Product {productId} Details</button>
+  );
 }
+
 export default ProductDetailsButton;
