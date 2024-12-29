@@ -1,6 +1,9 @@
 .user-profile {
   text-align: center;
   margin-top: 40px;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 13%;
 }
 
 .profile-header {

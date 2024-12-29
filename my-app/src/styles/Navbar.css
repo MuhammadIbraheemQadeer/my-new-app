@@ -1,47 +1,91 @@
 .navbar {
-  display: flex;
+  background-color: #000000;
+  padding: 10px 20px;
+  display: flex;                
+  width: 100%;             
+  box-sizing: border-box;  
+  position: relative;      
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
 }
 
-.logo-img {
+.navbar .logo-name{
   display: flex;
-  align-items: center;
+  margin: 10px;
 }
 
-.logo-img img {
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
+.navbar .logo{
+  width: 15%;
+  height: 10%;
   margin-right: 10px;
+  border-radius: 15px;
 }
 
-.logo {
-  color: white;
+.navbar h2 {
+  margin: 0;
+  color: rgb(4, 245, 36); 
   font-size: 24px;
+  margin-top: 13px;
+}
+
+.navbar h2 span.E{
+  color: red;
+}
+
+.navbar h2 span.dash{
+  color: rgb(183, 0, 255);
+}
+
+.navbar h2 span.commerce{
+  color: rgb(255, 208, 0);
+}
+
+.navbar h2 span.website{
+  color: rgb(81, 255, 0);
+}
+
+.navbar ul {
+  list-style-type: none;   
+  margin: 0;
+  padding: 0;
+  display: flex;           
+}
+
+.navbar li {
+  margin-left: 30px;
+}
+
+.navbar a {
+  color: rgb(14, 228, 199);            
+  text-decoration: none;   
+  font-size: 18px;         
+  font-weight: 300; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;        
+  transition: color 0.3s ease;
+  border: 2px;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+
+.navbar a:hover {
+  font-size: 1.2rem;
   font-weight: bold;
+  color: #f06c00;         
 }
 
-.nav-item {
+.navbar .nav-items {
   display: flex;
-  gap: 30px;
+  justify-content: flex-end;
 }
 
-.nav-item a {
-  padding: 8px 20px; 
-  border-radius: 25px; 
-  background-color: #00bcd4; 
-  color: white; 
-  text-decoration: none; 
-  font-size: 18px;
-  font-weight: 500; 
-  transition: background-color 0.3s ease, transform 0.3s ease;
+.navbar .nav-items ul li a i {
+  margin-right: 8px; /* Adds space between the icon and text */
+  font-size: 18px;   /* Adjusts the size of the icon */
 }
 
-.nav-item a:hover {
-  background-color: #0097a7; 
-  transform: scale(1.1); 
-  text-decoration: none; 
+.navbar .nav-items ul li a {
+  text-decoration: none;  /* Removes underline */
+  display: flex;
+  align-items: center;   /* Aligns icon and text vertically */
 }
+
